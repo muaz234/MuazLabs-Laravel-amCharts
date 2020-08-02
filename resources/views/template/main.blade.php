@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Preview page of Metronic Admin Theme #1 for statistics, charts, recent events and reports" name="description" />
-    <meta content="" name="author" />
+    <meta content="" name="Muaz" />
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
     <link href="{{ asset('assets/global/plugins/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css" />
@@ -25,7 +25,7 @@
     <!-- END THEME GLOBAL STYLES -->
     <!-- BEGIN THEME LAYOUT STYLES -->
     <link href="{{ asset('assets/layouts/layout/css/layout.min.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('assets/layouts/layout/css/themes/darkblue.min.css') }}" rel="stylesheet" id="style_color"  type="text/css" />
+    <link href="{{ asset('assets/layouts/layout/css/themes/darkblue.min.css') }}" rel="stylesheet"  type="text/css" id="style_color" />
     <link href="{{ asset('assets/layouts/layout/css/custom.min.css') }}" rel="stylesheet" type="text/css" />
     <!-- END THEME LAYOUT STYLES -->
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
@@ -39,7 +39,7 @@
             <div class="page-header-inner ">
                 <!-- BEGIN LOGO -->
                 <div class="page-logo">
-                    <a href="#">
+                    <a href="{{route('home')}}">
                         <img src="{{asset('assets/layouts/layout/img/logo.png')}}" alt="logo" class="logo-default" /> </a>
                     <div class="menu-toggler sidebar-toggler">
                         <span></span>
@@ -68,42 +68,9 @@
                                     <a href="#">
                                         <i class="icon-user"></i> My Profile </a>
                                 </li>
-{{--                                <li>--}}
-{{--                                    <a href="app_calendar.html">--}}
-{{--                                        <i class="icon-calendar"></i> My Calendar </a>--}}
-{{--                                </li>--}}
-{{--                                <li>--}}
-{{--                                    <a href="app_inbox.html">--}}
-{{--                                        <i class="icon-envelope-open"></i> My Inbox--}}
-{{--                                        <span class="badge badge-danger"> 3 </span>--}}
-{{--                                    </a>--}}
-{{--                                </li>--}}
-{{--                                <li>--}}
-{{--                                    <a href="app_todo.html">--}}
-{{--                                        <i class="icon-rocket"></i> My Tasks--}}
-{{--                                        <span class="badge badge-success"> 7 </span>--}}
-{{--                                    </a>--}}
-{{--                                </li>--}}
-{{--                                <li class="divider"> </li>--}}
-{{--                                <li>--}}
-{{--                                    <a href="page_user_lock_1.html">--}}
-{{--                                        <i class="icon-lock"></i> Lock Screen </a>--}}
-{{--                                </li>--}}
-{{--                                <li>--}}
-{{--                                    <a href="page_user_login_1.html">--}}
-{{--                                        <i class="icon-key"></i> Log Out </a>--}}
-{{--                                </li>--}}
                             </ul>
                         </li>
                         <!-- END USER LOGIN DROPDOWN -->
-                        <!-- BEGIN QUICK SIDEBAR TOGGLER -->
-                        <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
-                        <li class="dropdown dropdown-quick-sidebar-toggler">
-                            <a href="javascript:;" class="dropdown-toggle">
-                                <i class="icon-logout"></i>
-                            </a>
-                        </li>
-                        <!-- END QUICK SIDEBAR TOGGLER -->
                     </ul>
                 </div>
                 <!-- END TOP NAVIGATION MENU -->
@@ -136,15 +103,13 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="row">
-                        @yield('content-body')
-                    </div>
+                    @yield('content-body')
                 </div>
             </div>
         </div>
             @include('template.footer')
             @include('template.scripts')
     </div>
+
 </body>
 </html>
