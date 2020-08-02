@@ -2,7 +2,7 @@
 <link href="{{ asset('css/dashboard/custom.css') }}" type="text/css" rel="stylesheet" />
 @section('content-body')
     <h1 class="page-title"> Admin Dashboard
-        <small>statistics, charts, recent events and reports</small>
+{{--        <small>statistics, charts, recent events and reports</small>--}}
     </h1>
     <!-- BEGIN DASHBOARD STATS 1-->
     <div class="row">
@@ -15,7 +15,7 @@
                     <div class="number">
                         <span data-counter="counterup" data-value="{{ $parentsCount }}">0</span>
                     </div>
-                    <div class="desc"> Parents </div>
+                    <div class="desc"> Siblings </div>
                 </div>
             </a>
         </div>
@@ -27,7 +27,7 @@
                 <div class="details">
                     <div class="number">
                         <span data-counter="counterup" data-value="{{ $spouseCount }}">0</span> </div>
-                    <div class="desc"> Siblings </div>
+                    <div class="desc"> Spouse </div>
                 </div>
             </a>
         </div>
@@ -40,7 +40,7 @@
                     <div class="number">
                         <span data-counter="counterup" data-value="{{ $childrenCount }}">0</span>
                     </div>
-                    <div class="desc"> Spouse </div>
+                    <div class="desc"> Children </div>
                 </div>
             </a>
         </div>
@@ -100,7 +100,9 @@
         </div>
     </div>
 @endsection
-
+<script>
+    var API_URL = "{{ route('api.index') }}";
+</script>
 <script
     src="https://code.jquery.com/jquery-3.5.1.slim.js"
     integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="

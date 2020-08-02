@@ -13,7 +13,7 @@ class ChildrenSeeder extends Seeder
     {
         //
         Children::create([
-            'parent_id' => 1,
+            'parents_id' => 1,
             'spouse_id' => 1,
             'name' => 'Muaz',
             'age' => 26,
@@ -21,7 +21,7 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 1,
+            'parents_id' => 1,
             'spouse_id' => 1,
             'name' => 'Farhanah',
             'age' => 25,
@@ -29,7 +29,7 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 1,
+            'parents_id' => 1,
             'spouse_id' => 1,
             'name' => 'Sajidah',
             'age' => 16,
@@ -37,7 +37,7 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 1,
+            'parents_id' => 1,
             'spouse_id' => 1,
             'name' => 'Sabihah',
             'age' => 13,
@@ -45,7 +45,7 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 2,
+            'parents_id' => 2,
             'spouse_id' => 2,
             'name' => 'Saffiya',
             'age' => 17,
@@ -53,7 +53,7 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 2,
+            'parents_id' => 2,
             'spouse_id' => 2,
             'name' => 'Imran',
             'age' => 17,
@@ -61,7 +61,7 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 2,
+            'parents_id' => 2,
             'spouse_id' => 2,
             'name' => 'Nadia',
             'age' => 17,
@@ -69,7 +69,7 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 3,
+            'parents_id' => 3,
             'spouse_id' => 3,
             'name' => 'Mustaqim',
             'age' => 16,
@@ -77,7 +77,7 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 3,
+            'parents_id' => 3,
             'spouse_id' => 3,
             'name' => 'Myssara',
             'age' => 16,
@@ -85,7 +85,7 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 4,
+            'parents_id' => 4,
             'spouse_id' => 4,
             'name' => 'Qayyum',
             'age' => 15,
@@ -93,7 +93,7 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 4,
+            'parents_id' => 4,
             'spouse_id' => 4,
             'name' => 'Aulia',
             'age' => 11,
@@ -101,7 +101,7 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 4,
+            'parents_id' => 4,
             'spouse_id' => 4,
             'name' => 'Fateh',
             'age' => 6,
@@ -109,7 +109,7 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 4,
+            'parents_id' => 4,
             'spouse_id' => 4,
             'name' => 'Riziq',
             'age' => 4,
@@ -117,7 +117,7 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 5,
+            'parents_id' => 5,
             'spouse_id' => 5,
             'name' => 'Ameerul',
             'age' => 9,
@@ -125,7 +125,7 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 5,
+            'parents_id' => 5,
             'spouse_id' => 5,
             'name' => 'Azeezul',
             'age' => 8,
@@ -133,7 +133,7 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 5,
+            'parents_id' => 5,
             'spouse_id' => 5,
             'name' => 'Afequl',
             'age' => 11,
@@ -141,7 +141,7 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 6,
+            'parents_id' => 6,
             'spouse_id' => 6,
             'name' => 'Hazim',
             'age' => 8,
@@ -149,7 +149,7 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 6,
+            'parents_id' => 6,
             'spouse_id' => 6,
             'name' => 'Auni',
             'age' => 8,
@@ -157,7 +157,7 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 6,
+            'parents_id' => 6,
             'spouse_id' => 6,
             'name' => 'Alisya',
             'age' => 8,
@@ -165,7 +165,7 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 6,
+            'parents_id' => 6,
             'spouse_id' => 6,
             'name' => 'Aliya Hana',
             'age' => 8,
@@ -173,15 +173,15 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 6,
+            'parents_id' => 6,
             'spouse_id' => 6,
-            'name' => 'Aaa',
+            'name' => 'Ammar Uwais',
             'age' => 8,
             'status' => 1
         ]);
 
         Children::create([
-            'parent_id' => 7,
+            'parents_id' => 7,
             'spouse_id' => 7,
             'name' => 'Zharif',
             'age' => 8,
@@ -189,7 +189,7 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 7,
+            'parents_id' => 7,
             'spouse_id' => 7,
             'name' => 'Zhafri',
             'age' => 8,
@@ -197,7 +197,7 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 7,
+            'parents_id' => 7,
             'spouse_id' => 7,
             'name' => 'Zara',
             'age' => 8,
@@ -205,7 +205,7 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 8,
+            'parents_id' => 8,
             'spouse_id' => 8,
             'name' => 'Aqil',
             'age' => 8,
@@ -213,7 +213,7 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 8,
+            'parents_id' => 8,
             'spouse_id' => 8,
             'name' => 'Irdina',
             'age' => 8,
@@ -221,7 +221,7 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 8,
+            'parents_id' => 8,
             'spouse_id' => 8,
             'name' => 'Irdini',
             'age' => 8,
@@ -229,7 +229,7 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 9,
+            'parents_id' => 9,
             'spouse_id' => 9,
             'name' => 'Fateema',
             'age' => 8,
@@ -237,7 +237,7 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 9,
+            'parents_id' => 9,
             'spouse_id' => 9,
             'name' => 'Khadeeja',
             'age' => 8,
@@ -245,9 +245,25 @@ class ChildrenSeeder extends Seeder
         ]);
 
         Children::create([
-            'parent_id' => 10,
+            'parents_id' => 9,
+            'spouse_id' => 9,
+            'name' => 'Ayeesha',
+            'age' => 8,
+            'status' => 1
+        ]);
+
+        Children::create([
+            'parents_id' => 10,
             'spouse_id' => 10,
             'name' => 'Aina',
+            'age' => 4,
+            'status' => 1
+        ]);
+
+        Children::create([
+            'parents_id' => 10,
+            'spouse_id' => 10,
+            'name' => 'Dalily',
             'age' => 4,
             'status' => 1
         ]);
