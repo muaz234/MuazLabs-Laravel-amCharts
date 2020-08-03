@@ -3,14 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="afc34c86-95f6-47ad-9ed7-c641b727c6f2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_30_163944_create_children_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_07_30_163944_create_children_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/ChildrenSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ChildrenSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/dashboard/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/dashboard/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/dashboard/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/dashboard/custom.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/template/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/template/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +184,9 @@
       <workItem from="1596127072987" duration="5781000" />
       <workItem from="1596191254427" duration="1928000" />
       <workItem from="1596204200816" duration="6444000" />
-      <workItem from="1596340067990" duration="8554000" />
+      <workItem from="1596340067990" duration="8895000" />
+      <workItem from="1596463047232" duration="424000" />
+      <workItem from="1596463551508" duration="4819000" />
     </task>
     <task id="LOCAL-00001" summary="add migration schema, seeds data and define models">
       <created>1596134210739</created>
@@ -211,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596357520425</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add Column chart. fix routes error">
+      <created>1596381588610</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1596381588610</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,25 +240,28 @@
     <MESSAGE value="add migration schema, seeds data and define models" />
     <MESSAGE value="add metronic template into laravel blade templates" />
     <MESSAGE value="initial chart and stats" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial chart and stats" />
+    <MESSAGE value="add Column chart. fix routes error" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Column chart. fix routes error" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="301" y="0" key="CommitChangelistDialog2" timestamp="1596357520107">
+    <state x="301" y="23" width="837" height="828" key="CommitChangelistDialog2" timestamp="1596381588408">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="301" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1596357520107" />
+    <state x="301" y="23" width="837" height="828" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1596381588408" />
     <state x="538" y="376" key="NewPhpFileDialog" timestamp="1596356233275">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="538" y="376" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1596356233275" />
-    <state x="320" y="186" key="Vcs.Push.Dialog.v2" timestamp="1596357533619">
+    <state x="320" y="186" key="Vcs.Push.Dialog.v2" timestamp="1596381590931">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="186" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1596357533619" />
-    <state x="380" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1596340067826">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="320" y="186" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1596381590931" />
+    <state x="-706" y="-742" key="com.intellij.ide.util.TipDialog" timestamp="1596463551616">
+      <screen x="-1213" y="-1080" width="1920" height="1080" />
     </state>
+    <state x="-706" y="-742" key="com.intellij.ide.util.TipDialog/0.0.1440.900/-1213.-1080.1920.1080/707.-1080.1920.1080@-1213.-1080.1920.1080" timestamp="1596463551616" />
     <state x="380" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1596340067826" />
+    <state x="380" y="282" key="com.intellij.ide.util.TipDialog/0.23.1440.828/-1213.-1057.1920.1057/707.-1057.1920.1057@0.23.1440.828" timestamp="1596463056231" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1596208237543">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

@@ -85,7 +85,7 @@
                 <div class="portlet-title">
                     <div class="caption">
                         <i class="icon-share font-red-sunglo hide"></i>
-                        <span class="caption-subject font-dark bold uppercase"></span>
+                        <span class="caption-subject font-dark bold uppercase">Word Count</span>
 {{--                        <span class="caption-helper">monthly stats...</span>--}}
                     </div>
                     <div class="actions">
@@ -93,10 +93,44 @@
                     </div>
                 </div>
                 <div class="portlet-body">
-
+                    <div id="childTagCloud" ></div>
                 </div>
             </div>
             <!-- END PORTLET-->
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="row">
+        <div class="col-lg-6 col-xs-12 col-sm-12">
+            {{--   BEGIN PORTLET         --}}
+            <div class="portlet light bordered">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <i  class="icon-share font-red-sunglo hide"></i>
+                        <span class="caption-subject font-dark bold uppercase">Collapsible force-directed tree</span>
+                    </div>
+                    <div class="actions">
+
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <div id="childForceDirected"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xs-12 col-sm-12">
+            <div class="portlet light bordered">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <i class="icon-share font-red-sunglo hide"></i>
+                        <span class="caption-subject font-dark bold uppercase">Packed circle chart</span>
+                    </div>
+                    <div class="actions"></div>
+                </div>
+                <div class="portlet-body">
+                    <div id="childPackedCircle"></div>
+                </div>
+            </div>
         </div>
     </div>
 @endsection
@@ -111,6 +145,8 @@
 <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
 <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
 <script src="https://cdn.amcharts.com/lib/4/themes/material.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/plugins/wordCloud.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/plugins/forceDirected.js"></script>
 <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
 
 

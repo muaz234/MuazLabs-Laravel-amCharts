@@ -21,3 +21,4 @@ Route::get('/', function(Request $request){
     return response()->json(['success' => true, 'message' => 'Welcome'], 200);
 })->name('api.index');
 Route::get('/child', 'AdminController@childData')->name('api.child');
+Route::get('/arrayChild', 'AdminController@forceDirected')->name('api.forceDirected');

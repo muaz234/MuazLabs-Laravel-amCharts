@@ -10,7 +10,7 @@ $(document).ready(function () {
         chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
         // var data = [];
         $.get(API_URL + '/child').then(function (response) {
-            console.log(response);
+            // console.log(response);
             chart.data = response;
 
             var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
@@ -75,5 +75,129 @@ $(document).ready(function () {
         }); // end am4core.ready()
 
         });
+
+    am4core.ready(function() {
+
+// Themes begin
+        am4core.useTheme(am4themes_animated);
+// Themes end
+
+        var chart = am4core.create("childTagCloud", am4plugins_wordCloud.WordCloud);
+        chart.fontFamily = "Courier New";
+        var series = chart.series.push(new am4plugins_wordCloud.WordCloudSeries());
+        series.randomness = 0.1;
+        series.rotationThreshold = 0.5;
+        $.get(API_URL + '/child').then(function (response) {
+            series.data = response;
+            series.dataFields.word = "siblings";
+            series.dataFields.value = "total";
+
+            series.heatRules.push({
+                "target": series.labels.template,
+                "property": "fill",
+                "min": am4core.color("#0000CC"),
+                "max": am4core.color("#CC00CC"),
+                "dataField": "value"
+            });
+
+            series.labels.template.url = "https://stackoverflow.com/questions/tagged/{word}";
+            series.labels.template.urlTarget = "_blank";
+            series.labels.template.tooltipText = "{word}: {value}";
+
+            var hoverState = series.labels.template.states.create("hover");
+            hoverState.properties.fill = am4core.color("#FF0000");
+
+            var subtitle = chart.titles.create();
+            subtitle.text = "";
+
+            var title = chart.titles.create();
+            title.text = "Siblings Count";
+            title.fontSize = 20;
+            title.fontWeight = "800";
+        });
+
+
+// Enable export
+        chart.exporting.menu = new am4core.ExportMenu();
+
+    }); // end am4core.ready()
+
+    am4core.ready(function() {
+
+// Themes begin
+        am4core.useTheme(am4themes_animated);
+// Themes end
+
+        var chart = am4core.create("childForceDirected", am4plugins_forceDirected.ForceDirectedTree);
+        chart.legend = new am4charts.Legend();
+        var networkSeries = chart.series.push(new am4plugins_forceDirected.ForceDirectedSeries())
+
+        $.get(API_URL + '/arrayChild').then(function (response) {
+           // console.log(response);
+            networkSeries.data = response;
+
+
+            // collapsible force-directed tree
+            networkSeries.dataFields.linkWith = "linkWith";
+            networkSeries.dataFields.name = "name";
+            networkSeries.dataFields.id = "name";
+            networkSeries.dataFields.value = "value";
+            networkSeries.dataFields.children = "children";
+
+            networkSeries.nodes.template.tooltipText = "{name}";
+            networkSeries.nodes.template.fillOpacity = 1;
+
+            networkSeries.nodes.template.label.text = "{name}"
+            networkSeries.fontSize = 8;
+            networkSeries.maxLevels = 2;
+            networkSeries.maxRadius = am4core.percent(6);
+            networkSeries.manyBodyStrength = -16;
+            networkSeries.nodes.template.label.hideOversized = true;
+            networkSeries.nodes.template.label.truncate = true;
+
+        });
+
+        //enable export
+        chart.exporting.menu = new am4core.ExportMenu();
+
+
+    }); // end am4core.ready()
+
+    am4core.ready(function() {
+
+// Themes begin
+        am4core.useTheme(am4themes_animated);
+// Themes end
+
+        var chart = am4core.create("childPackedCircle", am4plugins_forceDirected.ForceDirectedTree);
+        chart.legend = new am4charts.Legend();
+
+        var networkSeries = chart.series.push(new am4plugins_forceDirected.ForceDirectedSeries())
+
+        $.get(API_URL + '/arrayChild').then(function (response) {
+            networkSeries.data = response;
+
+                networkSeries.dataFields.linkWith = "linkWith";
+            networkSeries.dataFields.name = "name";
+            networkSeries.dataFields.id = "name";
+            networkSeries.dataFields.value = "value";
+            networkSeries.dataFields.children = "children";
+            networkSeries.links.template.distance = 1;
+            networkSeries.nodes.template.tooltipText = "{name}";
+            networkSeries.nodes.template.fillOpacity = 1;
+            networkSeries.nodes.template.outerCircle.scale = 1;
+
+            networkSeries.nodes.template.label.text = "{name}"
+            networkSeries.fontSize = 8;
+            networkSeries.nodes.template.label.hideOversized = true;
+            networkSeries.nodes.template.label.truncate = true;
+            networkSeries.minRadius = am4core.percent(2);
+            networkSeries.manyBodyStrength = -5;
+            networkSeries.links.template.strokeOpacity = 0;
+        })
+
+            //enable export
+        chart.exporting.menu = new am4core.ExportMenu();
+    }); // end am4core.ready()
 
 });

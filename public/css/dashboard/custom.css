@@ -3,3 +3,21 @@
     width: 100%;
     height: 500px;
 }
+
+#childTagCloud
+{
+    width: 100%;
+    height: 56%;
+}
+
+#childForceDirected
+{
+    width: 100%;
+    height: 100%;
+}
+
+#childPackedCircle
+{
+    width: 100%;
+    height: 100%;
+}
