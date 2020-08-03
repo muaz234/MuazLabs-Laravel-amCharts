@@ -3,10 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="afc34c86-95f6-47ad-9ed7-c641b727c6f2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/dashboard/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/dashboard/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/dashboard/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/dashboard/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/template/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +187,7 @@
       <workItem from="1596204200816" duration="6444000" />
       <workItem from="1596340067990" duration="8895000" />
       <workItem from="1596463047232" duration="424000" />
-      <workItem from="1596463551508" duration="4819000" />
+      <workItem from="1596463551508" duration="7325000" />
     </task>
     <task id="LOCAL-00001" summary="add migration schema, seeds data and define models">
       <created>1596134210739</created>
@@ -216,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596381588610</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add force directed chart, word count chart">
+      <created>1596473013286</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1596473013286</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,20 +249,23 @@
     <MESSAGE value="add metronic template into laravel blade templates" />
     <MESSAGE value="initial chart and stats" />
     <MESSAGE value="add Column chart. fix routes error" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Column chart. fix routes error" />
+    <MESSAGE value="add force directed chart, word count chart" />
+    <option name="LAST_COMMIT_MESSAGE" value="add force directed chart, word count chart" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="301" y="23" width="837" height="828" key="CommitChangelistDialog2" timestamp="1596381588408">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="-812" y="-1052" width="837" height="828" key="CommitChangelistDialog2" timestamp="1596477909580">
+      <screen x="-1213" y="-1080" width="1920" height="1080" />
     </state>
+    <state x="-812" y="-1052" key="CommitChangelistDialog2/0.0.1440.900/-1213.-1080.1920.1080/707.-1080.1920.1080@-1213.-1080.1920.1080" timestamp="1596477909580" />
     <state x="301" y="23" width="837" height="828" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1596381588408" />
     <state x="538" y="376" key="NewPhpFileDialog" timestamp="1596356233275">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="538" y="376" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1596356233275" />
-    <state x="320" y="186" key="Vcs.Push.Dialog.v2" timestamp="1596381590931">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="-786" y="-857" key="Vcs.Push.Dialog.v2" timestamp="1596473048246">
+      <screen x="-1213" y="-1080" width="1920" height="1080" />
     </state>
+    <state x="-786" y="-857" key="Vcs.Push.Dialog.v2/0.0.1440.900/-1213.-1080.1920.1080/707.-1080.1920.1080@-1213.-1080.1920.1080" timestamp="1596473048246" />
     <state x="320" y="186" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1596381590931" />
     <state x="-706" y="-742" key="com.intellij.ide.util.TipDialog" timestamp="1596463551616">
       <screen x="-1213" y="-1080" width="1920" height="1080" />

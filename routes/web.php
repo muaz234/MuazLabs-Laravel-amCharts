@@ -13,8 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'AdminController@statistics')->name('/');
+Route::get('/', 'AdminController@statistics')->name('/')->middleware('auth');
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
-//Route::get('/home', 'HomeController@index')->name('home'); // example for routes
+Route::get('/home', 'HomeController@index')->name('home'); // example for routes
+Route::get('logout', 'HomeController@logout')->name('logout');

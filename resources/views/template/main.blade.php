@@ -65,8 +65,8 @@
                             </a>
                             <ul class="dropdown-menu dropdown-menu-default">
                                 <li>
-                                    <a href="#">
-                                        <i class="icon-user"></i> My Profile </a>
+                                    <a href="{{route('logout')}}">
+                                        <i class="icon-user"></i>Log Out </a>
                                 </li>
                             </ul>
                         </li>
