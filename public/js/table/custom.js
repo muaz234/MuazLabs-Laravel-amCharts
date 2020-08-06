@@ -1,9 +1,33 @@
 $(document).ready(function () {
-    $('#tbl_parents').DataTable({
+    const malay_language = {
+        "sEmptyTable":      "Tiada data",
+        "sInfo":            "Paparan dari _START_ hingga _END_ dari _TOTAL_ rekod",
+        "sInfoEmpty":       "Paparan 0 hingga 0 dari 0 rekod",
+        "sInfoFiltered":    "(Ditapis dari jumlah _MAX_ rekod)",
+        "sInfoPostFix":     "",
+        "sInfoThousands":   ",",
+        "sLengthMenu":      "Papar _MENU_ rekod",
+        "sLoadingRecords":  "Diproses...",
+        "sProcessing":      "Sedang diproses...",
+        "sSearch":          "Carian:",
+        "sZeroRecords":      "Tiada padanan rekod yang dijumpai.",
+        "oPaginate": {
+            "sFirst":        "Pertama",
+            "sPrevious":     "Sebelum",
+            "sNext":         "Seterusnya",
+            "sLast":         "Akhir"
+        },
+        "oAria": {
+            "sSortAscending":  ": diaktifkan kepada susunan lajur menaik",
+            "sSortDescending": ": diaktifkan kepada susunan lajur menurun"
+        }
+    };
 
-
+    var export_btns = [
+        'copy', 'excel', 'pdf', 'print', 'pdf', 'colvis'
+    ];
+   var tbl_parents =  $('#tbl_parents').DataTable({
         responsive: true,
-
         'ajax': API_URL + '/parentsDT',
         'columns': [
             {
@@ -27,13 +51,19 @@ $(document).ready(function () {
             {
                 data: 'last_activity', render: function(data, type, row, meta) { return moment(data).startOf('hour').fromNow() }
             },
-        ]
+        ],
+        language: malay_language
 
     });
 
+    new $.fn.dataTable.Buttons( tbl_parents, {
+        buttons: export_btns
+    } );
+    tbl_parents.buttons().container()
+        .insertBefore('#tbl_parents');
 
-    $('#tbl_spouse').DataTable({
 
+    var tbl_spouse = $('#tbl_spouse').DataTable({
         responsive: true,
         'ajax': API_URL + '/spouseDT',
         'columns': [
@@ -61,11 +91,20 @@ $(document).ready(function () {
             {
                 data: 'last_activity', render: function(data, type, row, meta) { return moment(data).startOf('hour').fromNow() }
             },
-        ]
+        ],
+        language: malay_language
+
 
     });
 
-    $('#tbl_children').DataTable({
+    new $.fn.dataTable.Buttons( tbl_spouse, {
+        buttons: export_btns
+    } );
+    tbl_spouse.buttons().container()
+        .insertBefore('#tbl_spouse');
+
+
+   var tbl_children =  $('#tbl_children').DataTable({
         responsive: true,
         'ajax': API_URL + '/childrenDT',
         'columns': [
@@ -93,47 +132,30 @@ $(document).ready(function () {
             {
                 data: 'last_activity', render: function(data, type, row, meta) { return moment(data).startOf('hour').fromNow() }
             },
-        ]
+        ],
+        language: malay_language
+
 
     });
+    // add buttons to datatable
+    new $.fn.dataTable.Buttons( tbl_children, {
+        buttons: export_btns
+    } );
+    tbl_children.buttons().container()
+        .insertBefore('#tbl_children');
+
 });
 
-// unused function
-function statusTag(data)
-{
-    if(data == 1)
-    {
-        var badge =  '<span class="badge badge-primary">Active</span>'
-    }
-    else
-    {
-        var badge =  '<span class="badge badge-warning">Inactive</span>'
 
-    }
-    return badge;
-}
 
-// Date renderer for DataTables from cdn.datatables.net/plug-ins/1.10.21/dataRender/datetime.js
-$.fn.dataTable.render.moment = function ( from, to, locale ) {
-    // Argument shifting
-    if ( arguments.length === 1 ) {
-        locale = 'en';
-        to = from;
-        from = 'YYYY-MM-DD';
-    }
-    else if ( arguments.length === 2 ) {
-        locale = 'en';
-    }
 
-    return function ( d, type, row ) {
-        if (! d) {
-            return type === 'sort' || type === 'type' ? 0 : d;
-        }
 
-        var m = window.moment( d, from, locale, true );
 
-        // Order and type get a number value from Moment, everything else
-        // sees the rendered value
-        return m.format( type === 'sort' || type === 'type' ? 'x' : to );
-    };
-};
+
+
+
+
+
+
+
+

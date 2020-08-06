@@ -11,14 +11,16 @@
                 <span class="caption-subject font-dark bold uppercase">Portlet Tabs</span>
             </div>
             <ul class="nav nav-tabs">
-                <li>
-                    <a href="#portlet_tab3" data-toggle="tab"> Tab 3 </a>
+
+
+                <li class="active">
+                    <a href="#portlet_tab1" data-toggle="tab"> Tab 1 </a>
                 </li>
                 <li>
                     <a href="#portlet_tab2" data-toggle="tab"> Tab 2 </a>
                 </li>
-                <li class="active">
-                    <a href="#portlet_tab1" data-toggle="tab"> Tab 1 </a>
+                <li>
+                    <a href="#portlet_tab3" data-toggle="tab"> Tab 3 </a>
                 </li>
             </ul>
         </div>
