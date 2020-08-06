@@ -19,3 +19,4 @@ Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home'); // example for routes
 Route::get('logout', 'HomeController@logout')->name('logout');
+Route::get('/datatable', 'AdminController@dt')->name('dt');

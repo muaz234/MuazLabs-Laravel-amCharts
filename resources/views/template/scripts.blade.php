@@ -12,6 +12,7 @@
   <script src="{{ asset('assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js') }}" type="text/javascript"></script>
 <!-- END CORE PLUGINS -->
 <!-- BEGIN PAGE LEVEL PLUGINS -->
+  <script src="{{ asset('assets/global/plugins/datatables/datatables.min.js') }}" type="text/javascript"></script>
   <script src="{{ asset('assets/global/plugins/moment.min.js') }}" type="text/javascript"></script>
   <script src="{{ asset('assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js') }}" type="text/javascript"></script>
   <script src="{{ asset('assets/global/plugins/morris/morris.min.js') }}" type="text/javascript"></script>
@@ -57,3 +58,7 @@
   <script src="{{ asset('assets/layouts/global/scripts/quick-sidebar.min.js') }}" type="text/javascript"></script>
   <script src="{{ asset('assets/layouts/global/scripts/quick-nav.min.js') }}" type="text/javascript"></script>
 <!-- END THEME LAYOUT SCRIPTS -->
+
+{{--  BEGIN CDN SCRIPTS  --}}
+
+{{--  END CDN SCRIPTS  --}}

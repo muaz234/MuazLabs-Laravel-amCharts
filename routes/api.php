@@ -22,3 +22,6 @@ Route::get('/', function(Request $request){
 })->name('api.index');
 Route::get('/child', 'AdminController@childData')->name('api.child');
 Route::get('/arrayChild', 'AdminController@forceDirected')->name('api.forceDirected');
+Route::get('/parentsDT', 'AdminController@dt_parents')->name('api.parentsDT');
+Route::get('/childrenDT', 'AdminController@dt_children')->name('api.childrenDT');
+Route::get('/spouseDT', 'AdminController@dt_spouse')->name('api.spouseDT');

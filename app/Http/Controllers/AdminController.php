@@ -10,10 +10,29 @@ class AdminController extends Controller
 {
     //
 
-//    public function __construct()
-//    {
-//        $this->middleware('auth');
-//    }
+    public function dt()
+    {
+
+        return view('pages.table');
+    }
+
+    public function dt_parents()
+    {
+        $parents = Parents::all();
+        return response()->json(['data' => $parents]);
+    }
+
+    public function dt_children()
+    {
+        $children = Children::all();
+        return response()->json(['data' => $children]);
+    }
+
+    public function dt_spouse()
+    {
+        $spouse = Spouse::all();
+        return response()->json(['data' => $spouse]);
+    }
 
     public function statistics()
     {
