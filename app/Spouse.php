@@ -20,6 +20,6 @@ class Spouse extends Model
 
     public function children()
     {
-        return $this->hasMany('App\Children');
+        return $this->hasMany('App\Children', 'spouse_id');
     }
 }

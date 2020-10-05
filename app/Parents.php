@@ -15,11 +15,11 @@ class Parents extends Model
     // define relationship for parents and spouse
     public function spouse()
     {
-        return $this->hasOne('App\Spouse');
+        return $this->hasOne('App\Spouse', 'parent_id');
     }
 
     public function children()
     {
-      return  $this->hasMany('App\Children');
+      return  $this->hasMany('App\Children', 'parents_id');
     }
 }

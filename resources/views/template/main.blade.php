@@ -60,8 +60,8 @@
                         <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
                         <li class="dropdown dropdown-user">
                             <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                <img alt="" class="img-circle" src="{{ asset('assets/layouts/layout/img/avatar3_small.jpg') }}" />
-                                <span class="username username-hide-on-mobile"> Nick </span>
+                                <img alt="" class="img-circle" src="https://avatars3.githubusercontent.com/u/36180180?s=460&u=27e0ff324050e9a5b49106dc45d6805cd76a8b24&v=4" />
+                                <span class="username username-hide-on-mobile"> Muaz  </span>
                                 <i class="fa fa-angle-down"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-default">

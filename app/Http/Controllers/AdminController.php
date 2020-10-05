@@ -31,6 +31,7 @@ class AdminController extends Controller
     public function dt_spouse()
     {
         $spouse = Spouse::all();
+//        dd($spouse);
         return response()->json(['data' => $spouse]);
     }
 
