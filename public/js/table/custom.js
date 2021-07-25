@@ -27,6 +27,8 @@ $(document).ready(function () {
 
    var tbl_parents =  $('#tbl_parents').DataTable({
         responsive: true,
+        processing: true,
+        // serverSide: true,
         'ajax': API_URL + '/parentsDT',
         'buttons': export_buttons,
         'columns': [
@@ -65,6 +67,8 @@ $(document).ready(function () {
 
     var tbl_spouse = $('#tbl_spouse').DataTable({
         responsive: true,
+        processing: true,
+        // serverSide: true,
         'ajax': API_URL + '/spouseDT',
         'buttons': export_buttons,
         'columns': [
@@ -107,6 +111,8 @@ $(document).ready(function () {
 
    var tbl_children =  $('#tbl_children').DataTable({
         responsive: true,
+         processing: true,
+        // serverSide: true,
         'ajax': API_URL + '/childrenDT',
         'buttons': export_buttons,
         'columns': [

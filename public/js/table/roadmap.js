@@ -2,6 +2,8 @@ $(document).ready(() => {
             // roadmap laravel developer datatable
             var tbl_laravel_roadmap =  $('#tbl_roadmap').DataTable({
                 responsive: true,
+                processing: true,
+                // serverSide: true,
                 dom: 'Bfrtip',
                 buttons: ['copy', 'excel', 'pdf', 'print', 'pdf', 'colvis'],
                 'ajax': API_URL + '/roadmaps',
