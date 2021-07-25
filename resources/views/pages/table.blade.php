@@ -1,3 +1,4 @@
+<?php $page = "family_table" ?> 
 @extends('template.main')
 <link href="assets/global/plugins/datatables/datatables.min.css" type="text/css" rel="stylesheet" />
 

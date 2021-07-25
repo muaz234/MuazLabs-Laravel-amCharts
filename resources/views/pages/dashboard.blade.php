@@ -1,3 +1,4 @@
+<?php $page = "dashboard" ?> 
 @extends('template.main')
 <link href="{{ asset('css/dashboard/custom.css') }}" type="text/css" rel="stylesheet" />
 @section('content-body')

@@ -51,14 +51,22 @@
 <!-- END THEME GLOBAL SCRIPTS -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
   <script src="{{ asset('assets/pages/scripts/dashboard.min.js') }}" type="text/javascript"></script>
-<!-- END PAGE LEVEL SCRIPTS -->
+  <!-- END PAGE LEVEL SCRIPTS -->
 <!-- BEGIN THEME LAYOUT SCRIPTS -->
   <script src="{{ asset('assets/layouts/layout/scripts/layout.min.js') }}" type="text/javascript"></script>
   <script src="{{ asset('assets/layouts/layout/scripts/demo.min.js') }}" type="text/javascript"></script>
   <script src="{{ asset('assets/layouts/global/scripts/quick-sidebar.min.js') }}" type="text/javascript"></script>
   <script src="{{ asset('assets/layouts/global/scripts/quick-nav.min.js') }}" type="text/javascript"></script>
 <!-- END THEME LAYOUT SCRIPTS -->
-
+{{-- <script>
+  $(document).ready(function()
+  {
+      $('#clickmewow').click(function()
+      {
+          $('#radio1003').attr('checked', 'checked');
+      });
+  })
+</script> --}}
 {{--  BEGIN CDN SCRIPTS  --}}
 
 {{--  END CDN SCRIPTS  --}}

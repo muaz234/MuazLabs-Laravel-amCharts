@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Family Dashboard</title>
+    <title>Learning & Training</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Preview page of Metronic Admin Theme #1 for statistics, charts, recent events and reports" name="description" />
@@ -42,7 +42,7 @@
                 <div class="page-logo">
                     <a href="{{route('/')}}">
                         <img src="{{asset('assets/layouts/layout/img/logo.png')}}" alt="logo" class="logo-default" /> </a>
-                    <div class="menu-toggler sidebar-toggler">
+                    <div class="menu-toggler sidebar-toggler" style="margin-top: 30px !important;">
                         <span></span>
                     </div>
                 </div>
@@ -96,13 +96,13 @@
                                 <span>Dashboard</span>
                             </li>
                         </ul>
-                        <div class="page-toolbar">
+                        {{-- <div class="page-toolbar">
                             <div id="dashboard-report-range" class="pull-right tooltips btn btn-sm" data-container="body" data-placement="bottom" data-original-title="Change dashboard date range">
                                 <i class="icon-calendar"></i>&nbsp;
                                 <span class="thin uppercase hidden-xs"></span>&nbsp;
                                 <i class="fa fa-angle-down"></i>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                     @yield('content-body')
                 </div>
