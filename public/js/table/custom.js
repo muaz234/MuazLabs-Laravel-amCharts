@@ -23,12 +23,12 @@ $(document).ready(function () {
         }
     };
 
-    var export_btns = [
-        'copy', 'excel', 'pdf', 'print', 'pdf', 'colvis'
-    ];
+    var export_buttons = ['copy', 'excel', 'pdf', 'print', 'pdf', 'colvis'];
+
    var tbl_parents =  $('#tbl_parents').DataTable({
         responsive: true,
         'ajax': API_URL + '/parentsDT',
+        'buttons': export_buttons,
         'columns': [
             {
                 data: 'id'
@@ -56,8 +56,8 @@ $(document).ready(function () {
 
     });
 
-    new $.fn.dataTable.Buttons( tbl_parents, {
-        buttons: export_btns
+     new $.fn.dataTable.Buttons( tbl_parents, {
+        buttons: export_buttons
     } );
     tbl_parents.buttons().container()
         .insertBefore('#tbl_parents');
@@ -66,6 +66,7 @@ $(document).ready(function () {
     var tbl_spouse = $('#tbl_spouse').DataTable({
         responsive: true,
         'ajax': API_URL + '/spouseDT',
+        'buttons': export_buttons,
         'columns': [
             {
                 data: 'id'
@@ -98,7 +99,7 @@ $(document).ready(function () {
     });
 
     new $.fn.dataTable.Buttons( tbl_spouse, {
-        buttons: export_btns
+        buttons: export_buttons
     } );
     tbl_spouse.buttons().container()
         .insertBefore('#tbl_spouse');
@@ -107,6 +108,7 @@ $(document).ready(function () {
    var tbl_children =  $('#tbl_children').DataTable({
         responsive: true,
         'ajax': API_URL + '/childrenDT',
+        'buttons': export_buttons,
         'columns': [
             {
                 data: 'id'
@@ -139,10 +141,18 @@ $(document).ready(function () {
     });
     // add buttons to datatable
     new $.fn.dataTable.Buttons( tbl_children, {
-        buttons: export_btns
+        buttons: export_buttons
     } );
     tbl_children.buttons().container()
         .insertBefore('#tbl_children');
+
+      
+        // add buttons to datatable
+        // new $.fn.dataTable.Buttons( tbl_laravel_roadmap, {
+        //     buttons: export_buttons
+        // } );
+        // tbl_laravel_roadmap.buttons().container()
+        //     .insertBefore('#tbl_roadmap');
 
 });
 

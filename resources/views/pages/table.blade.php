@@ -1,6 +1,6 @@
 <?php $page = "family_table" ?> 
 @extends('template.main')
-<link href="assets/global/plugins/datatables/datatables.min.css" type="text/css" rel="stylesheet" />
+<link href="{{asset('assets/global/plugins/datatables/datatables.min.css')}}" type="text/css" rel="stylesheet" />
 
 @section('content-body')
 {{--<br>--}}
@@ -93,11 +93,12 @@
 </div>
 
     @endsection
-<script
-    src="https://code.jquery.com/jquery-3.5.1.slim.js"
-    integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
-    crossorigin="anonymous"></script>
+
 <script>
     var API_URL = "{{ route('api.index') }}";
 </script>
+<script
+src="https://code.jquery.com/jquery-3.5.1.slim.js"
+integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
+crossorigin="anonymous"></script>
 <script src="{{ asset('js/table/custom.js') }}" type="text/javascript"></script>

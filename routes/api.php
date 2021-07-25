@@ -25,3 +25,5 @@ Route::get('/arrayChild', 'AdminController@forceDirected')->name('api.forceDirec
 Route::get('/parentsDT', 'AdminController@dt_parents')->name('api.parentsDT');
 Route::get('/childrenDT', 'AdminController@dt_children')->name('api.childrenDT');
 Route::get('/spouseDT', 'AdminController@dt_spouse')->name('api.spouseDT');
+Route::get('roadmaps', 'RoadmapController@getData')->name('api.roadmapDT');
+

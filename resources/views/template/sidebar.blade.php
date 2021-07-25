@@ -54,7 +54,7 @@
                     <span class="selected"></span>
                     <span class="arrow open"></span>
                     @else
-                    <span class="arrow"></span>\
+                    <span class="arrow"></span>
                     @endif
                 </a>
                 <ul class="sub-menu">
@@ -69,11 +69,11 @@
                     </li>
                 </ul>
             </li>
-           <li class="nav-item @if($page=='laravel_path') {{ 'start active open' }} @endif">
+           <li class="nav-item @if($page=='laravel_roadmap_path') {{ 'start active open' }} @endif">
                <a href="javascript:;" class="nav-link nav-toggle">
                    <i class="icon-puzzle"></i>
                    <span class="title">Laravel RoadMap</span>
-                   @if($page=='laravel_path')
+                   @if($page=='laravel_roadmap_path')
                         <span class="selected"></span>
                         <span class="arrow open"></span>
                    @else
@@ -81,10 +81,10 @@
                    @endif
                </a>
                <ul class="sub-menu">
-                   <li class="nav-item  @if($page=='laravel_path') {{ 'start active open' }} @endif">
-                       <a href="" class="nav-link ">
+                   <li class="nav-item  @if($page=='laravel_roadmap_path') {{ 'start active open' }} @endif">
+                       <a href="{{route('roadmap')}}" class="nav-link ">
                            <span class="title">RoadMap List</span>
-                           @if($page=='laravel_path') 
+                           @if($page=='laravel_roadmap_path') 
                                 <span class="selected"></span>  
                            @endif
                        </a>

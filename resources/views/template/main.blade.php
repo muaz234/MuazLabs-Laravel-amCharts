@@ -93,7 +93,7 @@
                                 <i class="fa fa-circle"></i>
                             </li>
                             <li>
-                                <span>Dashboard</span>
+                                <span>{{ucwords(str_replace("_", " ", $page))}}</span>
                             </li>
                         </ul>
                         {{-- <div class="page-toolbar">

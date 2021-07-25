@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +18,7 @@ Route::get('/', 'AdminController@statistics')->name('/')->middleware('auth');
 
 Auth::routes(['register' => false]);
 
-Route::get('/home', 'HomeController@index')->name('home'); // example for routes
+Route::get('home', 'HomeController@index')->name('home'); // example for routes
 Route::get('logout', 'HomeController@logout')->name('logout');
-Route::get('/datatable', 'AdminController@dt')->name('dt');
+Route::get('datatable', 'AdminController@dt')->name('dt');
+Route::get('roadmap', 'RoadmapController@index')->name('roadmap');
