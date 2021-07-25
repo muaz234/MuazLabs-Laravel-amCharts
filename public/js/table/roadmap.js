@@ -7,10 +7,14 @@ $(document).ready(() => {
                 'ajax': API_URL + '/roadmaps',
                 'columns': [
                     {
-                        data: 'link_id'
+                        data: 'module_id'
                     },
                     {
-                        data: 'link_name', render: function(data, type, row, meta) {return `<a href=${row.link_url} target="_blank" >${data}</a>`}
+                        data: 'module_name', render: function(data, type, row, meta) 
+                        {
+                            let link = row.link;
+                            return `<a href="${link.url}" target="_blank" >${data}</a>`
+                        }
                     },
                     {
                         data: 'level.id', render: function(data, type, row, meta) 

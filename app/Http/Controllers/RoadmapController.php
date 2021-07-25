@@ -23,11 +23,13 @@ class RoadmapController extends Controller
         foreach($link_ids as $link_id)
         {
             $datas = Link::find($link_id['id'])->topics()->get();
+            // get pivot data id
+            // dd($datas[0]->pivot->link_id);
             // massage data from intermediate table and its linked table values
             $data = [
-                'link_id' => $datas[0]->id,
-                'link_name' => $datas[0]->name,
-                'link_url' => $datas[0]->url,
+                'module_id' => $datas[0]->id,
+                'module_name' => $datas[0]->name,
+                'link' => Link::find($datas[0]->pivot->link_id) !== null ? Link::find($datas[0]->pivot->link_id)->toArray() : [],
                 'created_at' => $datas[0]->created_at,
                 'updated_at' => $datas[0]->updated_at,
                 'topic' => Topic::find($datas[0]->topic_id) !== null ?  Topic::find($datas[0]->topic_id)->toArray() : [],
