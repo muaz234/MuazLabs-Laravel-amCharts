@@ -47,7 +47,7 @@ $(document).ready(() => {
                         data: 'level.description'
                     },
                     {
-                        data: 'updated_at', render: function(data, type, row, meta) { return moment(data).format('DD-MM-YYYY HH:mm:ss') }
+                        data: 'updated_at.date', render: function(data, type, row, meta) { return moment(data).format('DD-MM-YYYY HH:mm:ss') }
                     },
                 ],
                 language:  {
