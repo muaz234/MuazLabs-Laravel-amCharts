@@ -6,6 +6,8 @@ use App\Link;
 use App\Level;
 use App\Topic;
 use Illuminate\Http\Request;
+use Yajra\DataTables\DataTables;
+use Illuminate\Database\Eloquent\Collection;
 
 class RoadmapController extends Controller
 {
@@ -38,8 +40,9 @@ class RoadmapController extends Controller
                 // push value to existing array value
             array_push($result, $data);
         }
-        // return result in form of json
-        return response()->json(['data' => $result]);
+        // turn into collection
+        $courses = new Collection($result);
+        return Datatables::of($courses)->make(true);
 
     }
 }
